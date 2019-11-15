@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Laboratorio3", "Laboratorio3\Laboratorio3.csproj", "{52DEC029-7332-46F5-989F-6832716F852E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWT_API", "JWT_API\JWT_API.csproj", "{DDB02B1E-2D1E-4123-84F9-7C71F9793C82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{52DEC029-7332-46F5-989F-6832716F852E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52DEC029-7332-46F5-989F-6832716F852E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52DEC029-7332-46F5-989F-6832716F852E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52DEC029-7332-46F5-989F-6832716F852E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDB02B1E-2D1E-4123-84F9-7C71F9793C82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDB02B1E-2D1E-4123-84F9-7C71F9793C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDB02B1E-2D1E-4123-84F9-7C71F9793C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDB02B1E-2D1E-4123-84F9-7C71F9793C82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

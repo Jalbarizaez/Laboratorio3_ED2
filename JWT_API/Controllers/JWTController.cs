@@ -52,13 +52,12 @@ namespace Laboratorio3.Controllers
 		{
 		}
 		#endregion
-		[Route("token")]
 		[HttpPost("{Key}")]
-		public async Task<IActionResult> GenerarJWT( [FromBody]JsonModel Json)
+		public async Task<IActionResult> GenerarJWT(string Key, [FromBody]JsonModel Json)
 		{
 			try
 			{
-				return GenerarToken(Json);
+				return GenerarToken(Json, Key);
 			}
 			catch
 			{
@@ -66,9 +65,9 @@ namespace Laboratorio3.Controllers
 			}
 		}
 
-		public IActionResult GenerarToken(JsonModel Json)
+		public IActionResult GenerarToken(JsonModel Json, string Key)
 		{
-			var LlaveSecreta = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Json.id));
+			var LlaveSecreta = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Key));
 			var credenciales = new SigningCredentials(LlaveSecreta, ALGO);
 			var claims = new[] { new Claim(JwtRegisteredClaimNames.NameId, Json.id) };
 			JwtSecurityToken Token = new JwtSecurityToken(
