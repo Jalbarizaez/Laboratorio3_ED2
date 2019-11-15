@@ -1,0 +1,14 @@
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Laboratorio3_ED2\Laboratorio3\bin\Debug\netcoreapp2.1\Laboratorio3.deps.json
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Laboratorio3_ED2\Laboratorio3\bin\Debug\netcoreapp2.1\Laboratorio3.runtimeconfig.json
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Laboratorio3_ED2\Laboratorio3\bin\Debug\netcoreapp2.1\Laboratorio3.runtimeconfig.dev.json
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Laboratorio3_ED2\Laboratorio3\bin\Debug\netcoreapp2.1\Laboratorio3.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Laboratorio3_ED2\Laboratorio3\obj\Debug\netcoreapp2.1\Laboratorio3.csprojAssemblyReference.cache
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Laboratorio3_ED2\Laboratorio3\obj\Debug\netcoreapp2.1\Laboratorio3.csproj.CoreCompileInputs.cache
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Laboratorio3_ED2\Laboratorio3\obj\Debug\netcoreapp2.1\Laboratorio3.RazorAssemblyInfo.cache
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Laboratorio3_ED2\Laboratorio3\obj\Debug\netcoreapp2.1\Laboratorio3.RazorAssemblyInfo.cs
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Laboratorio3_ED2\Laboratorio3\obj\Debug\netcoreapp2.1\Laboratorio3.AssemblyInfoInputs.cache
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Laboratorio3_ED2\Laboratorio3\obj\Debug\netcoreapp2.1\Laboratorio3.AssemblyInfo.cs
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Laboratorio3_ED2\Laboratorio3\obj\Debug\netcoreapp2.1\Laboratorio3.RazorTargetAssemblyInfo.cache
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Laboratorio3_ED2\Laboratorio3\bin\Debug\netcoreapp2.1\Laboratorio3.pdb
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Laboratorio3_ED2\Laboratorio3\obj\Debug\netcoreapp2.1\Laboratorio3.dll
+C:\Users\Sergio Daniel\Documents\Programas Visual Studio 2017\2do Año\Laboratorio3_ED2\Laboratorio3\obj\Debug\netcoreapp2.1\Laboratorio3.pdb
