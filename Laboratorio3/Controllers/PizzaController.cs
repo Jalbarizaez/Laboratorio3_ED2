@@ -15,25 +15,31 @@ namespace Laboratorio3.Controllers
     public class PizzaController : ControllerBase
     {
         public static List<Pizza> Pizzas = new List<Pizza>();
+        private readonly PizzaService _pizzaService;
+
+        public PizzaController(PizzaService pizzaService)
+        {
+            _pizzaService = pizzaService;
+        }
 
         // GET: api/Pizza
         [HttpGet]
         public ActionResult Get()
         {
 
-            Pizzas.Add(new Pizza { nombre = "Domi", descripcion = "", extraQueso = true, ingredientes = new string[] { "queso", "Harina" },masa = "Dura" ,porciones = 8, tamaño= "Mediana" });
-            return Ok(Pizzas);
-            //return Ok()
+            return Ok(_pizzaService.Get());
+            
         }
 
-        // GET: api/Pizza/
+        // GET: api/Pizza/name
         [HttpGet("{name}")]
         public ActionResult Get(string name)
         {
-            if(Pizzas.Exists(x=> x.nombre ==name))
+            var pizza = _pizzaService.Get(name);
+            if (pizza != null)
             {
 
-                return Ok(Pizzas.Find(x=> x.nombre == name));
+                return Ok(pizza);
             }
             else
             { return NotFound(); }
@@ -45,22 +51,24 @@ namespace Laboratorio3.Controllers
         {
             if(ModelState.IsValid)
             {
-                Pizzas.Add(value);
+                _pizzaService.Create(value);
+
                 return Ok();
             }
             else { return BadRequest(); }
         }
 
-        // PUT: api/Pizza/5
+        // PUT: api/Pizza/name
         [HttpPut("{name}")]
         public ActionResult Put(string name, [FromBody] Pizza value)
         {
-            if(ModelState.IsValid)
+            var pizza = _pizzaService.Get(name);
+
+            if (ModelState.IsValid)
             {
-                if (Pizzas.Exists(x => x.nombre == name))
+                if (pizza != null)
                 {
-                    Pizzas.RemoveAll(x => x.nombre == name);
-                    Pizzas.Add(value);
+                    _pizzaService.Update(name, value);
                     return Ok();
                 }
                 else
@@ -69,13 +77,14 @@ namespace Laboratorio3.Controllers
             else { return BadRequest(); }
         }
 
-        // DELETE: api/ApiWithActions/5
+        // DELETE: api/Delete/name
         [HttpDelete("{name}")]
         public ActionResult Delete(string name)
         {
-            if (Pizzas.Exists(x => x.nombre == name))
+            var pizza = _pizzaService.Get(name);
+            if (pizza != null)
             {
-                Pizzas.RemoveAll(x => x.nombre == name);
+                _pizzaService.Remove(pizza.nombre);
                 return Ok();
             }
             else

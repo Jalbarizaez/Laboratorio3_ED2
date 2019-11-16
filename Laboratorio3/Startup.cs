@@ -10,7 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-
+using Laboratorio3;
 namespace Laboratorio3
 {
     public class Startup
@@ -26,6 +26,14 @@ namespace Laboratorio3
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.Configure<PizzastoreDatabaseSettings>(
+     
+                Configuration.GetSection(nameof(PizzastoreDatabaseSettings)));
+
+            services.AddSingleton<IPizzastoreDatabaseSettings>(sp =>
+                sp.GetRequiredService<IOptions<PizzastoreDatabaseSettings>>().Value);
+            services.AddSingleton<PizzaService>();
+            //services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
