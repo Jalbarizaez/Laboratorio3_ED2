@@ -6,5 +6,6 @@ En la branch Serie 2 - 3 se encuentra el crud de pizza
 *La serie-I recive un Json con el siguiente formato
 {
   "nombre" : "LaboratorioED2"
-}
+}*
+La ruta para generar el token es api/JWT
 
