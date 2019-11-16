@@ -7,6 +7,6 @@ namespace Laboratorio3.Models
 {
 	public class JsonModel
 	{
-		public string id { get; set; }
+		public string name { get; set; }
 	}
 }
